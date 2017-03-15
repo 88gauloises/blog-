@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ja="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>'>
+<div id="wrap">
+
+  <header id="header">
+    <div class="inner">
+      <h1 id="logo"><%= link_to "Murmur", root_path %></h1>
+      <p id="catchcopy">Cucina di fumatori che....</p>
+    </div><!-- /.inner -->
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  </header><!-- /#header -->
+
+  <!--<img alt="home" src="/assets/home.jpg" />-->
+
+  <div id="main">
+    <%= yield %>
+  </div><!-- /#main -->
+
+</div><!-- /#wrap -->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+</body>
+</html>
