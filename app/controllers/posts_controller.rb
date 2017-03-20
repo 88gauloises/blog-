@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+before_filter :authenticate_user!, only: [:new, :edit, :update, :destroy]
+
+
   def index
     @posts = Post.all
   end
@@ -40,10 +43,10 @@ class PostsController < ApplicationController
     @post.destroy
 
     redirect_to posts_path
-   end
+  end
 
   private
     def post_params
-      params.require(:post).permit(:title, :text)
+      params.require(:post).permit(:picture, :title, :content)
     end
 end

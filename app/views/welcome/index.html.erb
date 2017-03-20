@@ -1,4 +1,35 @@
 <h1>Welcome to Murmur</h1>
 
-<p>ここはどなたでもつぶやくことができるサイトです<p>
-<h1><%= link_to "つぶやき投稿", controller: "posts" %></h1>
+<p>I am glad you came<p>
+<h1 class="tweets"><i class="glyphicon glyphicon-grain"></i>
+<%= link_to "Posted by Tweets", controller: "posts" %></h1>
+
+<div id="footer">
+  <br>
+    <ul class="navbar-nav list-inline">
+        <li>
+          <i class="glyphicon glyphicon-grain" style="color: #800000";></i>
+            <%= link_to "About", welcome_about_path %>
+        </li>
+        <li>
+            <i class="glyphicon glyphicon-grain" style="color: #800000";></i>
+            <a href="">Contact</a>
+        </li>
+    </ul>
+    <!-- /nav -->
+    <div class="clearfix"></div>
+    <ul class="sns-icon list-inline">
+        <li>
+            <i class="fa fa-twitter fa-2x"></i>
+        </li>
+        <li>
+            <i class="fa fa-facebook fa-2x"></i>
+        </li>
+    </ul>
+    <!-- /sns-icon -->
+    <div class="copy">
+        <span>Copyright &#169; 2017 Murmur </span>
+    </div>
+    <!-- /copy -->
+</div>
+<!-- /footer -->

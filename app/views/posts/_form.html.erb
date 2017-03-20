@@ -1,4 +1,4 @@
-<%= form_for @post do |f| %>
+<%= form_for(@post, html: {multipart: true}) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= @post.errors.count %>件のエラーが発生したため保存ができませんでした。</h2>
@@ -9,6 +9,11 @@
       </ul>
     </div>
   <% end %>
+
+  <p>
+    <%= f.label :picture %>
+    <%= f.file_field :picture %>
+  </p>
 
   <p>
     <%= f.label :title, "タイトル" %><br>

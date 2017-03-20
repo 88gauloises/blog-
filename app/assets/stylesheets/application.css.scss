@@ -18,23 +18,52 @@
 @import "bootstrap";
 
 #header{
-  margin:0px 50px;
-  border-bottom-style: double;
-  border-color:white;
+  margin: 0px 0px 0px 69px;
 }
 
 body{
   margin:0;
   background-image: image-url("middle.jpg");
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
+  font-family: monospace;
 }
 
 #main{
   height:auto;
-  padding:10px 100px;
-  margin:30px 80px;
+  padding: 50px 100px;
+  margin: 40px 80px;
 }
 
 h1, h2{
-  color:white;
+  color: #800000;
+  margin-left: -10px;
+}
+
+.list{
+  margin: 0px 250px auto;
+  margin-top: -85px;
+}
+
+li{
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#logo{
+  font-size: 50px;
+  font-weight: 50px;
+}
+
+a,
+a:-webkit-any-link {
+  color: #d2691e;
+}
+
+#catchcopy{
+  margin-top: -10px;
+}
+
+.tweets{
+  margin-left: -30px;
 }

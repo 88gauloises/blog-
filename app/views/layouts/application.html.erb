@@ -12,10 +12,19 @@
 
   <header id="header">
     <div class="inner">
-      <h1 id="logo"><%= link_to "Murmur", root_path %></h1>
-      <p id="catchcopy">Cucina di fumatori che....</p>
+      <h1 id="logo"><i class="glyphicon glyphicon-grain"></i><%= link_to "Murmur", root_path %></h1>
+      <p id="catchcopy">Thank you for finding it.....</p>
+        <div class="list">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><%= link_to "Login", new_user_session_path,
+            :style=>"color: #ff4500;" %></li>
+            <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete,
+             :style=>"color: #ff4500;" %></li>
+            <li class="nav-item"><%= link_to "Sign up", new_user_registration_path,
+             :style=>"color: #ff4500;" %></li>
+          </ul>
+      </div>
     </div><!-- /.inner -->
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
   </header><!-- /#header -->
 
   <!--<img alt="home" src="/assets/home.jpg" />-->
