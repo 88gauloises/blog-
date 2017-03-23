@@ -47,6 +47,6 @@ before_filter :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
   private
     def post_params
-      params.require(:post).permit(:picture, :title, :content)
+      params.require(:post).permit(:picture, :name, :title, :content, :text)
     end
 end

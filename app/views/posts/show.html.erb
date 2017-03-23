@@ -1,6 +1,13 @@
 <br>
+<% if @post.picture.present? %>
+<p class="picture">
+  <%= image_tag @post.picture, :size => '150x150' %>
+</p>
+<% end %>
+
 <p>
-  <%= image_tag @post.picture, :size => '100x100' %>
+  <strong>名前：</strong>
+  <%= @post.name %>
 </p>
 
 <p>
