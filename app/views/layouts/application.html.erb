@@ -6,6 +6,11 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+    <link rel="stylesheet" media="all" type="text/css" href="tablet.scss" />
+    <!-- ※タブレット用のスタイル（tablet.css） -->
+    <link rel="stylesheet" media="all" type="text/css" href="smart.scss" />
+    <!-- ※スマートフォン用のスタイル（smart.css） -->
 </head>
 <body class='<%= controller.controller_name %>'>
 <div id="wrap">
