@@ -16,7 +16,6 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url(smart.css) screen and (max-width: 640px);
 
 #header{
   margin: 0px 0px 0px 69px;
@@ -24,7 +23,7 @@
 
 body {
   margin: 0;
-  background-image: image-url("middle.jpg");
+  background: #e9b59f;
   font-family: HelveticaNeue, Arial, Sans-serif;
 }
 
@@ -107,4 +106,10 @@ a:-webkit-any-link {
   position: absolute;
   top: calc(50% - 2em);
   left: calc(50% - 2em);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>thead>tr>th {
+    border-style: none;
 }
